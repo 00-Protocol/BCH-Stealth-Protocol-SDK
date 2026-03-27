@@ -1,12 +1,12 @@
 /**
- * @00-protocol/sdk — Silent CoinJoin (Joiner) Module
+ * @BCHStealthProtocol/sdk — Silent CoinJoin (Joiner) Module
  *
  * Protocol logic for multi-party CoinJoin mixing on Bitcoin Cash.
  * Coordinates pool discovery (Nostr kind 22230), round management via
  * NIP-59 gift-wrapped messages (kind 22231), onion-encrypted blind outputs,
  * multi-input/multi-output signing, and self-stealth address derivation.
  *
- * @module @00-protocol/sdk/joiner
+ * @module @BCHStealthProtocol/sdk/joiner
  */
 
 import { secp256k1 } from '@noble/curves/secp256k1';
