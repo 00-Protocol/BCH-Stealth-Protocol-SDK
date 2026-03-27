@@ -1,11 +1,11 @@
 /**
- * @00-protocol/sdk — Common crypto primitives and utilities
+ * @BCHStealthProtocol/sdk — Common crypto primitives and utilities
  *
  * Shared building blocks used by all SDK modules: byte encoding, hashing,
  * BIP32 HD key derivation, CashAddr encoding, BCH transaction construction,
  * and Nostr event signing.
  *
- * @module @00-protocol/sdk/common
+ * @module @BCHStealthProtocol/sdk/common
  */
 
 import { sha256 } from '@noble/hashes/sha256';
