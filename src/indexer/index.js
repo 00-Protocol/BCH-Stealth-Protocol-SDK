@@ -28,9 +28,12 @@
 /**
  * BCHPubkeyIndexer — client for the BCH Pubkey Indexer HTTP API.
  *
- * Connects to a hosted indexer server and fetches pubkeys for block ranges.
+ * Connects to a BCH Pubkey Indexer server and fetches pubkeys for block ranges.
  * The server is never told which pubkeys you care about — you receive all of
  * them and filter locally using ECDH.
+ *
+ * Any client (mobile or desktop) can point this at their own self-hosted indexer
+ * or any public indexer — there is no difference in behavior.
  *
  * @example
  * import { BCHPubkeyIndexer } from '@BCHStealthProtocol/sdk/indexer';
