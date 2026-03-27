@@ -18,3 +18,4 @@ export * from './joiner/index.js';
 export * from './onion/index.js';
 export * from './indexer/index.js';
 export * from './common/index.js';
+export * from './wizconnect/index.js';
