@@ -1,12 +1,17 @@
 /**
- * @00-protocol/sdk — Onion Relay Module
+ * @BCHStealthProtocol/sdk — Onion Relay Module
  *
- * Layered encryption for relay routing using secp256k1 ECDH + AES-256-GCM.
- * Each onion layer wraps the payload with an ephemeral key exchange so only
- * the designated relay node can peel its layer. Supports multi-hop routing
- * where each node sees only the next hop.
+ * Client-side crypto for connecting to the decentralized 00-Protocol onion relay network.
+ * Provides layered encryption (secp256k1 ECDH + AES-256-GCM) for multi-hop routing —
+ * each relay node can only peel its own layer and sees only the next hop.
  *
  * Also provides NIP-04, NIP-44, and NIP-59 Nostr encryption for relay transport.
+ *
+ * Architecture:
+ *   - Any client (mobile or desktop) uses this module to CONNECT to the relay network.
+ *   - There is no single relay endpoint — clients route through the decentralized network.
+ *   - Desktop wallets can HOST a relay node (standalone binary in BCH-Stealth-Protocol),
+ *     contributing additional hops. More nodes = more path randomness = stronger anonymity.
  *
  * @module @00-protocol/sdk/onion
  */
