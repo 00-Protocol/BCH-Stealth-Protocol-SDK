@@ -1,12 +1,12 @@
 /**
- * @00-protocol/sdk — BIP352 Stealth Address Module
+ * @BCHStealthProtocol/sdk — BIP352 Stealth Address Module
  *
  * ECDH-based stealth addresses for Bitcoin Cash. Allows senders to derive
  * one-time addresses for recipients without any on-chain address reuse.
  * Implements the full lifecycle: key derivation, address generation,
  * sending, scanning, and spending.
  *
- * @module @00-protocol/sdk/stealth
+ * @module @BCHStealthProtocol/sdk/stealth
  */
 
 import { secp256k1 } from '@noble/curves/secp256k1';
